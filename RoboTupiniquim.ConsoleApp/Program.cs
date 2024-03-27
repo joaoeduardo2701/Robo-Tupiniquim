@@ -24,11 +24,16 @@ internal class Program
         Console.WriteLine("Digite a direção do robô: ");
         direcao = char.Parse(Console.ReadLine());
 
+        Console.WriteLine("Digite A instrução para o robô(E, D, M): ");
         instrucaoString = Console.ReadLine();
         char[] instrucao = instrucaoString.ToCharArray();
 
         Console.WriteLine("Seu robô esta aqui:");
         MostrarPosicaoRobo(area, posicaox, posicaoy);
+
+        Console.WriteLine("Digite qualquer tecla para continuar...");
+        Console.ReadKey();
+        Console.Clear();
 
         Console.WriteLine();
 
